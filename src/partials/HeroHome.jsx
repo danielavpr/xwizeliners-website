@@ -36,7 +36,7 @@ function HeroHome() {
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <img src={XWizeliners} alt="xwizeliners logo" data-aos="fade-up" className="mb-4" />
+            <img src={XWizeliners} alt="xwizeliners logo" data-aos="fade-up" className="mb-4 w-96 mx-auto" />
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
               Connect, share & grow together
             </p>
