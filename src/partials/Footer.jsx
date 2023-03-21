@@ -16,7 +16,7 @@ function Footer() {
                 {/* Logo */}
                 <Link to="/" className="inline-block" aria-label="Cruip">
                   <svg
-                    className="w-8 h-8 fill-current text-purple-600"
+                    className="w-8 h-8 fill-current text-blue-600"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -168,7 +168,7 @@ function Footer() {
                 <Link
                   to="https://join.slack.com/t/xwizeline/shared_invite/zt-1rvk6pu68-jbbxWiDbPsO6gItcqTI_Ew"
                   target="_blank"
-                  className="flex justify-center items-center bg-gray-800 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out"
+                  className="flex justify-center items-center bg-gray-800 hover:bg-blue-600 rounded-full transition duration-150 ease-in-out"
                   aria-label="Slack"
                 >
                   <img src={slack} className="w-8 h-8" alt="slack" />
@@ -178,7 +178,7 @@ function Footer() {
                 <Link
                   to="https://www.linkedin.com/groups/12742721"
                   target="_blank"
-                  className="flex justify-center items-center bg-gray-800 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out"
+                  className="flex justify-center items-center bg-gray-800 hover:bg-blue-600 rounded-full transition duration-150 ease-in-out"
                   aria-label="Linkedin"
                 >
                   <img src={linkedin} className="w-8 h-8" alt="linkedin" />
