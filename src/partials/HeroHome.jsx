@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../utils/Modal';
-
 import HeroImage from '../images/hero-image-01.jpg';
+import XWizeliners from '../images/xwizeliners.png';
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -36,21 +36,19 @@ function HeroHome() {
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">
-              Landing template for startups
-            </h1>
+            <img src={XWizeliners} alt="xwizeliners logo" data-aos="fade-up" className="mb-4" />
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
-              Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
+              Connect, share & grow together
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a className="btn text-white bg-sky-600 hover:bg-sky-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">
-                  Start free trial
+                  Primary action
                 </a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
                 <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">
-                  Learn more
+                  Secondary action
                 </a>
               </div>
             </div>
