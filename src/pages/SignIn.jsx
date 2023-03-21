@@ -1,17 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import Header from '../partials/Header';
 import PageIllustration from '../partials/PageIllustration';
-import Banner from '../partials/Banner';
 
 function SignIn() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-
-      {/*  Site header */}
-      <Header />
-
       {/*  Page content */}
       <main className="grow">
 
@@ -87,11 +80,7 @@ function SignIn() {
             </div>
           </div>
         </section>
-
       </main>
-
-      <Banner />
-
     </div>
   );
 }

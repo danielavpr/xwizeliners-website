@@ -1,16 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import Header from '../partials/Header';
 import PageIllustration from '../partials/PageIllustration';
-import Banner from '../partials/Banner';
 
 function ResetPassword() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-
-      {/*  Site header */}
-      <Header />
 
       {/*  Page content */}
       <main className="grow">
@@ -53,11 +47,7 @@ function ResetPassword() {
             </div>
           </div>
         </section>
-
       </main>
-
-      <Banner />
-
     </div>
   );
 }
