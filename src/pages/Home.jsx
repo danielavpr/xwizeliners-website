@@ -3,7 +3,7 @@ import PageIllustration from '../partials/PageIllustration';
 import HeroHome from '../partials/HeroHome';
 import FeaturesBlocks from '../partials/FeaturesBlocks';
 import FeaturesZigZag from '../partials/FeaturesZigzag';
-import Testimonials from '../partials/Testimonials';
+import Team from '../partials/Team';
 import Newsletter from '../partials/Newsletter';
 import Footer from '../partials/Footer';
 
@@ -21,7 +21,7 @@ function Home() {
         <HeroHome />
         <FeaturesBlocks />
         <FeaturesZigZag />
-        <Testimonials />
+        <Team />
         <Newsletter />
       </main>
       {/*  Site footer */}

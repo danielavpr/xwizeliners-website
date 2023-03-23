@@ -1,9 +1,9 @@
 import React from "react";
-import TestimonialImage01 from "../images/testimonial-01.jpg";
-import TestimonialImage02 from "../images/testimonial-02.jpg";
-import TestimonialImage03 from "../images/testimonial-03.jpg";
+import Rene from "../images/rene.jpeg";
+import Mat from "../images/mat.jpeg";
+import Luis from "../images/luis.jpeg";
 
-function Testimonials() {
+function Team() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -16,7 +16,7 @@ function Testimonials() {
             </p>
           </div>
 
-          {/* Testimonials */}
+          {/* Team */}
           <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none">
             {/* 1st testimonial */}
             <div
@@ -26,10 +26,10 @@ function Testimonials() {
               <div className="relative inline-flex flex-col mb-4">
                 <img
                   className="rounded-full"
-                  src={TestimonialImage01}
+                  src={Luis}
                   width="120"
                   height="120"
-                  alt="Testimonial 01"
+                  alt="Luis Aranguren"
                 />
               </div>
               <p className="text-lg text-gray-400 grow">
@@ -52,10 +52,10 @@ function Testimonials() {
               <div className="relative inline-flex flex-col mb-4">
                 <img
                   className="rounded-full"
-                  src={TestimonialImage02}
+                  src={Mat}
                   width="120"
                   height="120"
-                  alt="Testimonial 02"
+                  alt="Matthew Pasienski"
                 />
               </div>
               <p className="text-lg text-gray-400 grow">Project Champion</p>
@@ -76,10 +76,10 @@ function Testimonials() {
               <div className="relative inline-flex flex-col mb-4">
                 <img
                   className="rounded-full"
-                  src={TestimonialImage03}
+                  src={Rene}
                   width="120"
                   height="120"
-                  alt="Testimonial 03"
+                  alt="Rene Nevarez"
                 />
               </div>
               <p className="text-lg text-gray-400 grow">Management</p>
@@ -97,4 +97,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default Team;
