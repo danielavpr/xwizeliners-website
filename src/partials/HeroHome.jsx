@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import Modal from '../utils/Modal';
-import Queretaro from '../images/queretaro.jpg';
+import Queretaro from '../images/queretaro.png';
 import XWizeliners from '../images/xwizeliners.png';
 
 function HeroHome() {
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   return (
     <section>
