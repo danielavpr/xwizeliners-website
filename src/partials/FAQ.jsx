@@ -8,13 +8,13 @@ const questions = [
       "Strong connections, development & training, job opportunities and referrals, online directory, monthly newsletter, digital or physical events, slack channels, and LinkedIn channel.",
   },
   {
-    question: "How can I join?",
+    question: "How can someone be part of the xwizeliners community?",
     answer:
-      "Join the LinkedIn and slack channels to start your journey in the community.You can invite your fellow XWizeliners to the group.",
+      "Be an XWizeliner. Enter the LinkedIn Group and Slack Channel. Post & participate whenever you can. Go to the events. Share the group with your fellow XWizeliners.",
   },
   {
     question:
-      "How much does it cost to be part of the group? does it require a compromise? is it voluntary?",
+      "How much does it cost to be part of the group? Does it require a compromise? Is it voluntary?",
     answer:
       "The XWizeliners community is a free and open (for XWizeliners) community that welcomes members from all walks of life. There are no membership fees for entry, and there is no expectation of compromise on the part of community members.",
   },
@@ -28,12 +28,7 @@ const questions = [
     answer:
       "Here's a video where Matthew Pasienski explains the purpose of this group.",
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7026248495896358914",
-  },
-  {
-    question: "How can someone be part of the xwizeliners community?",
-    answer:
-      "Be an XWizeliner. Enter the LinkedIn Group and Slack Channel. Post & participate whenever you can. Go to the events. Share the group with your fellow XWizeliners.",
-  },
+  }
 ];
 
 function FAQ() {
