@@ -8,7 +8,7 @@ const questions = [
       "Strong connections, development & training, job opportunities and referrals, online directory, monthly newsletter, digital or physical events, slack channels, and LinkedIn channel.",
   },
   {
-    question: "How can someone be part of the xwizeliners community?",
+    question: "How can someone be part of the XWizeliners community?",
     answer:
       "Be an XWizeliner. Enter the LinkedIn Group and Slack Channel. Post & participate whenever you can. Go to the events. Share the group with your fellow XWizeliners.",
   },
@@ -43,8 +43,8 @@ function FAQ() {
               Find the answers to common questions.
             </p>
           </div>
-          {questions.map((question) => (
-            <Collapse title={question.question} content={question.answer} link={question.link}/>
+          {questions.map((question, index) => (
+            <Collapse key={`question-${index}`} title={question.question} content={question.answer} link={question.link}/>
           ))}
         </div>
       </div>
