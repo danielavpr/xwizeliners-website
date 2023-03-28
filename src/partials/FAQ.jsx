@@ -44,7 +44,7 @@ function FAQ() {
             </p>
           </div>
           {questions.map((question) => (
-            <Collapse title={question.question} content={question.answer} />
+            <Collapse title={question.question} content={question.answer} link={question.link}/>
           ))}
         </div>
       </div>
