@@ -54,7 +54,7 @@ function Team() {
 
           {/* Team */}
           <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none">
-            {teamMembers.map((member, index) => <TeamCard imageSrc={member.imageSrc} name={member.name} role={member.role} link={member.link} />)}
+            {teamMembers.map((member, index) => <TeamCard key={`team-${index}`} imageSrc={member.imageSrc} name={member.name} role={member.role} link={member.link} />)}
           </div>
         </div>
       </div>

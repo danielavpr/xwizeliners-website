@@ -1,127 +1,69 @@
-import React from 'react';
-import FeatImage01 from '../images/features-03-image-01.png';
-import FeatImage02 from '../images/features-03-image-02.png';
-import FeatImage03 from '../images/features-03-image-03.png';
+import React from "react";
+import FeatureCard from "./FeatureCard";
+import brainstorm from "../images/brainstorm.svg";
+import job from "../images/job.svg";
+import group from "../images/group.svg";
+
+const features = [
+  {
+    image: brainstorm,
+    header: "Networking",
+    title: "Join the community",
+    description: {
+      text: "Linkedin and Slack",
+      link: "https://forms.gle/bwyLEBzTaHbb68GQ6",
+    },
+    bulletPoints: [
+      "Share tools and experience",
+      "Get access to new opportunities",
+    ],
+  },
+  {
+    image: job,
+    header: "Find your next role",
+    title: "Job seeking and sharing",
+    bulletPoints: ["Find inquiries for job opennings", "Share vacancies"],
+    imageLeft: true,
+  },
+  {
+    image: group,
+    header: "Organize events and connect with others",
+    title: "Be an ambassador",
+    description: {
+      text: "Register",
+      link: "https://forms.gle/UuhBzbqEQ96zmGJ47",
+    },
+    bulletPoints: ["Organize events", "Receive mentorship and resources"],
+  },
+];
 
 function FeaturesZigzag() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20 border-t border-gray-800">
-
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">What you can do in this group?</h1>
-            <p className="text-xl text-gray-400">Find tools and connections to grow your professional career.</p>
+            <h1 className="h2 mb-4">What you can do in this group</h1>
+            <p className="text-xl text-gray-400">
+              Find tools and connections to grow your professional career.
+            </p>
           </div>
 
           {/* Items */}
           <div className="grid gap-20">
-
-            {/* 1st item */}
-            <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage01} width="540" height="405" alt="Features 01" />
-              </div>
-              {/* Content */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
-                <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-sky-600 mb-2">If you're an entrepeneur</div>
-                  <h3 className="h3 mb-3">Entrepeneurship</h3>
-                  <p className="text-xl text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <ul className="text-lg text-gray-400 -mb-2">
-                    <li className="flex items-center mb-2">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Share tools with each other</span>
-                    </li>
-                    <li className="flex items-center mb-2">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Grow your ventures</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* 2nd item */}
-            <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width="540" height="405" alt="Features 02" />
-              </div>
-              {/* Content */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
-                <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <div className="font-architects-daughter text-xl text-sky-600 mb-2">If you're an employee</div>
-                  <h3 className="h3 mb-3">Job seeking and sharing</h3>
-                  <p className="text-xl text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <ul className="text-lg text-gray-400 -mb-2">
-                    <li className="flex items-center mb-2">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Find inquiries for job opennings</span>
-                    </li>
-                    <li className="flex items-center mb-2">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Share vacancies</span>
-                    </li>
-                    {/* <li className="flex items-center">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Amet consectetur adipiscing elit</span>
-                    </li> */}
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* 3rd item */}
-            <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width="540" height="405" alt="Features 03" />
-              </div>
-              {/* Content */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
-                <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-sky-600 mb-2">Want to become an active part of the community?</div>
-                  <h3 className="h3 mb-3">Be an ambassador</h3>
-                  <p className="text-xl text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <ul className="text-lg text-gray-400 -mb-2">
-                    <li className="flex items-center mb-2">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Organize events</span>
-                    </li>
-                    <li className="flex items-center mb-2">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Receive mentorship and resources</span>
-                    </li>
-                    <li className="flex items-center">
-                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>Represent the community</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
+            {features.map((feature, index) => (
+              <FeatureCard
+                key={`feature-${index}`}
+                image={feature.image}
+                header={feature.header}
+                title={feature.title}
+                description={feature.description}
+                bulletPoints={feature.bulletPoints}
+                imageLeft={feature.imageLeft}
+              />
+            ))}
           </div>
-
         </div>
       </div>
     </section>
