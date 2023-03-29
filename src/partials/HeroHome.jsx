@@ -49,7 +49,7 @@ function HeroHome() {
 
           {/* Hero image */}
           <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
-            <img className="mx-auto" src={Queretaro} width="1024" height="504" alt="Hero" />
+            <img className="mx-auto" src={Queretaro} width="800" alt="Hero" />
           </div>
         </div>
       </div>

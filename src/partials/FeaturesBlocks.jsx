@@ -15,7 +15,7 @@ function FeaturesBlocks() {
             </p>
           </div>
 
-          <img  src={values} alt="our values" data-aos="fade-up" data-aos-delay="200" />
+          <img  src={values} alt="our values" data-aos="fade-up" data-aos-delay="200" className="w-3/4 mx-auto" />
 
         </div>
       </div>

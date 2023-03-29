@@ -20,7 +20,6 @@ function Home() {
 
         {/*  Page sections */}
         <HeroHome />
-        <FeaturesBlocks />
         <FeaturesZigZag />
         <Team />
         <FAQ />
