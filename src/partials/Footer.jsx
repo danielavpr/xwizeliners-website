@@ -153,30 +153,6 @@ function Footer() {
 
           {/* Bottom area */}
           <div className="md:flex md:items-center md:justify-between">
-            {/* Social links */}
-            <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
-              <li className="ml-4">
-                <Link
-                  to="https://join.slack.com/t/xwizeline/shared_invite/zt-1rvk6pu68-jbbxWiDbPsO6gItcqTI_Ew"
-                  target="_blank"
-                  className="flex justify-center items-center bg-gray-800 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out"
-                  aria-label="Slack"
-                >
-                  <img src={slack} className="w-8 h-8" alt="slack" />
-                </Link>
-              </li>
-              <li className="ml-4">
-                <Link
-                  to="https://www.linkedin.com/groups/12742721"
-                  target="_blank"
-                  className="flex justify-center items-center bg-gray-800 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out"
-                  aria-label="Linkedin"
-                >
-                  <img src={linkedin} className="w-8 h-8" alt="linkedin" />
-                </Link>
-              </li>
-            </ul>
-
             {/* Copyrights note */}
             <div className="text-gray-400 text-sm mr-4">Created by Cobud</div>
           </div>
