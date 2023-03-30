@@ -45,7 +45,7 @@ function FeaturesZigzag() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">What you can do in this group</h1>
-            <p className="text-xl text-gray-400">
+            <p className="md:text-xl text-gray-400">
               Find tools and connections to grow your professional career.
             </p>
           </div>

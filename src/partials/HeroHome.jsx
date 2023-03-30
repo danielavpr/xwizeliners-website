@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import Queretaro from '../images/queretaro.png';
-import XWizeliners from '../images/xwizeliners.png';
+import React, { useState } from "react";
+import Queretaro from "../images/queretaro.png";
+import XWizeliners from "../images/xwizeliners.png";
 
 function HeroHome() {
-
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
@@ -14,9 +13,23 @@ function HeroHome() {
           data-aos="fade-up"
           data-aos-delay="400"
         >
-          <svg className="max-w-full" width="564" height="552" viewBox="0 0 564 552" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            className="max-w-full"
+            width="564"
+            height="552"
+            viewBox="0 0 564 552"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <defs>
-              <linearGradient id="illustration-02" x1="-3.766" y1="300.204" x2="284.352" y2="577.921" gradientUnits="userSpaceOnUse">
+              <linearGradient
+                id="illustration-02"
+                x1="-3.766"
+                y1="300.204"
+                x2="284.352"
+                y2="577.921"
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stopColor="#5D5DFF" stopOpacity=".01" />
                 <stop offset="1" stopColor="#5D5DFF" stopOpacity=".32" />
               </linearGradient>
@@ -34,13 +47,27 @@ function HeroHome() {
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <img src={XWizeliners} alt="xwizeliners logo" data-aos="fade-up" className="mb-4 w-96 mx-auto" />
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
-              We're a group of Wizeline alumni who have come together to connect, share & grow.
+            <img
+              src={XWizeliners}
+              alt="xwizeliners logo"
+              data-aos="fade-up"
+              className="mb-4 w-3/4 md:w-96 mx-auto"
+            />
+            <p
+              className="md:text-xl text-gray-400 mb-8"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              We're a group of Wizeline alumni who have come together to
+              connect, share & grow.
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-sky-600 hover:bg-sky-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://forms.gle/bwyLEBzTaHbb68GQ6" target="_blank">
+                <a
+                  className="btn text-white bg-sky-600 hover:bg-sky-700 w-full mb-4 sm:w-auto sm:mb-0"
+                  href="https://forms.gle/bwyLEBzTaHbb68GQ6"
+                  target="_blank"
+                >
                   Join us!
                 </a>
               </div>
@@ -48,7 +75,11 @@ function HeroHome() {
           </div>
 
           {/* Hero image */}
-          <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
+          <div
+            className="relative flex justify-center items-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <img className="mx-auto" src={Queretaro} width="800" alt="Hero" />
           </div>
         </div>

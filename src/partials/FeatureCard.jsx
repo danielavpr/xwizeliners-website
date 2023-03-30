@@ -19,7 +19,7 @@ function FeatureCard({
         data-aos="fade-up"
       >
         <img
-          className="max-w-full mx-auto md:max-w-none h-auto"
+          className="max-w-full mx-auto hidden md:block h-auto"
           src={image}
           width="380"
           alt={title}
@@ -31,7 +31,7 @@ function FeatureCard({
         data-aos="fade-right"
       >
         <div className="md:pr-4 lg:pr-12 xl:pr-16">
-          <div className="font-architects-daughter text-xl text-sky-600 mb-2">
+          <div className="font-architects-daughter md:text-xl text-sky-600 mb-2">
             {header}
           </div>
           <h3 className="h3 mb-3">{title}</h3>
@@ -39,7 +39,7 @@ function FeatureCard({
             <a
               href={description.link ? description.link : "#"}
               target="_blank"
-              className="text-xl text-gray-400 mb-4 flex items-center"
+              className="md:text-xl text-gray-400 mb-4 flex items-center"
             >
               {description.text}
               {description.link && (
@@ -52,7 +52,7 @@ function FeatureCard({
             </a>
           )}
 
-          <ul className="text-lg text-gray-400 -mb-2">
+          <ul className="md:text-lg text-gray-400 -mb-2">
             {bulletPoints.map((point, index) => (
               <li
                 className="flex items-center mb-2"

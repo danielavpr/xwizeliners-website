@@ -15,12 +15,15 @@ function Collapse({ title, content, link }) {
 
   return (
     <div className="my-6">
-      <button onClick={handleCollapse} className="flex items-center">
-        <p className="text-xl">{title}</p>
+      <button
+        onClick={handleCollapse}
+        className="block w-full md:text-xl text-left full"
+      >
+        {title}
         <img
           alt="open button"
           src={isOpen ? ArrowUp : ArrowDown}
-          className="h-6 ml-2"
+          className="h-6 ml-2 float-right align-middle"
         />
       </button>
 

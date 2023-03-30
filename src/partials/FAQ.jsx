@@ -28,7 +28,7 @@ const questions = [
     answer:
       "Here's a video where Matthew Pasienski explains the purpose of this group.",
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7026248495896358914",
-  }
+  },
 ];
 
 function FAQ() {
@@ -39,12 +39,17 @@ function FAQ() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">FAQ</h2>
-            <p className="text-xl text-gray-400">
+            <p className="md:text-xl text-gray-400">
               Find the answers to common questions.
             </p>
           </div>
           {questions.map((question, index) => (
-            <Collapse key={`question-${index}`} title={question.question} content={question.answer} link={question.link}/>
+            <Collapse
+              key={`question-${index}`}
+              title={question.question}
+              content={question.answer}
+              link={question.link}
+            />
           ))}
         </div>
       </div>
