@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Queretaro from "../images/queretaro.png";
 import XWizeliners from "../images/xwizeliners.png";
+import Carrousel from "./Carrousel";
 
 function HeroHome() {
   return (
@@ -80,7 +81,7 @@ function HeroHome() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <img className="mx-auto" src={Queretaro} width="800" alt="Hero" />
+            <Carrousel />
           </div>
         </div>
       </div>
