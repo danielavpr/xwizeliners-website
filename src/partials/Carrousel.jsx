@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ArrowLeft from '../images/arrow-left.svg';
 import ArrowRight from '../images/arrow-right.svg';
 import Dot from '../images/dot-full.svg';
@@ -10,12 +10,14 @@ import Queretaro from '../images/queretaro.png';
 import Queretaro2 from '../images/queretaro2.png';
 
 function Carrousel() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const delay = 3000;
   const slides = [
     {
-      url: Guadalajara,
+      url: Queretaro,
     },
     {
-      url: Queretaro,
+      url: Guadalajara,
     },
     {
       url: Guadalajara2,
@@ -27,8 +29,6 @@ function Carrousel() {
       url: Guadalajara3,
     },
   ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -46,11 +46,23 @@ function Carrousel() {
     setCurrentIndex(slideIndex);
   };
 
+  useEffect(() => {
+    setTimeout(
+      () =>
+        setCurrentIndex((prevIndex) =>
+          prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
+
+    return () => {};
+  }, [currentIndex]);
+
   return (
     <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+        className="w-full h-full rounded-2xl bg-center bg-cover duration-300"
       ></div>
       {/* Left Arrow */}
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
@@ -67,7 +79,6 @@ function Carrousel() {
             onClick={() => goToSlide(slideIndex)}
             className="cursor-pointer"
           >
-            {/* <img src={Dot} className="h-4" /> */}
             <img className="h-6" src={currentIndex === slideIndex ? Dot : DotEmpty}/>
           </div>
         ))}
