@@ -1,12 +1,12 @@
 import React from 'react';
 import PageIllustration from '../partials/PageIllustration';
 import HeroHome from '../partials/HeroHome';
-import FeaturesBlocks from '../partials/FeaturesBlocks';
 import FeaturesZigZag from '../partials/FeaturesZigzag';
 import Team from '../partials/Team';
 import Newsletter from '../partials/Newsletter';
 import Footer from '../partials/Footer';
 import FAQ from '../partials/FAQ';
+import Banner from '../partials/Banner';
 
 function Home() {
   return (
@@ -25,6 +25,7 @@ function Home() {
         <FAQ />
         <Newsletter />
       </main>
+      <Banner />
       {/*  Site footer */}
       <Footer />
     </div>
