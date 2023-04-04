@@ -10,7 +10,7 @@ const teamMembers = [
   {
     name: "Matthew Pasienski",
     imageSrc: Mat,
-    role: "Project Champion",
+    role: "Ambassador San Francisco",
     link: "https://www.linkedin.com/in/matthew-pasienski-06a55a33/",
   },
   {

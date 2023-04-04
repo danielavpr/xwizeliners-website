@@ -11,13 +11,14 @@ const features = [
     header: "Networking",
     title: "Join the community",
     description: {
-      text: "Linkedin and Slack",
+      text: "Register here",
       link: "https://forms.gle/bwyLEBzTaHbb68GQ6",
     },
     bulletPoints: [
       "Connect with some of the best talents in the tech industry",
       "Work and collaborate on interesting projects driven by the community",
-      "Be aware of all the the new opportunities in the group"
+      "Be aware of all the new opportunities in the group",
+      "Communication via LinkedIn and Slack"
     ],
   },
   {
@@ -36,7 +37,7 @@ const features = [
     header: "Be an active part of the community",
     title: "Be an ambassador",
     description: {
-      text: "Register",
+      text: "Register here",
       link: "https://forms.gle/UuhBzbqEQ96zmGJ47",
     },
     bulletPoints: ["Organize virtual or in-person events in your city", "Share your ideas to enhance the operations of the group"],
