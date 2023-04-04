@@ -3,6 +3,7 @@ import FeatureCard from "./FeatureCard";
 import brainstorm from "../images/brainstorm.svg";
 import job from "../images/job.svg";
 import group from "../images/group.svg";
+import ideas from "../images/share-ideas.svg";
 
 const features = [
   {
@@ -14,27 +15,43 @@ const features = [
       link: "https://forms.gle/bwyLEBzTaHbb68GQ6",
     },
     bulletPoints: [
-      "Share tools and experience",
-      "Get access to new opportunities",
+      "Connect with some of the best talents in the tech industry",
+      "Work and collaborate on interesting projects driven by the community",
+      "Be aware of all the the new opportunities in the group"
     ],
   },
   {
     image: job,
     header: "Find your next role",
     title: "Job seeking and sharing",
-    bulletPoints: ["Find inquiries for job opennings", "Share vacancies"],
+    description: {
+      text: "Join our jobs and referrals channel in slack",
+      link: "https://xwizeline.slack.com/archives/C04RM21AY57"
+    },
+    bulletPoints: ["Apply for your next dream job or refer a friend that could be a good fit", "Earn money from your referrals"],
     imageLeft: true,
   },
   {
-    image: group,
-    header: "Organize events and connect with others",
+    image: ideas,
+    header: "Be an active part of the community",
     title: "Be an ambassador",
     description: {
       text: "Register",
       link: "https://forms.gle/UuhBzbqEQ96zmGJ47",
     },
-    bulletPoints: ["Organize events", "Receive mentorship and resources"],
+    bulletPoints: ["Organize virtual or in-person events in your city", "Share your ideas to enhance the operations of the group"],
   },
+  {
+    image: group,
+    header: "Connect with other people",
+    title: "Join the events",
+    description: {
+      text: "Events channel in slack",
+      link: "https://xwizeline.slack.com/archives/C04R35Q6C5D",
+    },
+    bulletPoints: ["Be aware of all the next events online or in your city", "All the events are organized by the community"],
+    imageLeft: true,
+  }
 ];
 
 function FeaturesZigzag() {
