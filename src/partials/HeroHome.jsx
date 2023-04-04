@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Queretaro from "../images/queretaro.png";
 import XWizeliners from "../images/xwizeliners.png";
 import Carrousel from "./Carrousel";
+import links from "../constants/links";
 
 function HeroHome() {
   return (
@@ -66,7 +66,7 @@ function HeroHome() {
               <div data-aos="fade-up" data-aos-delay="400">
                 <a
                   className="btn text-white bg-sky-600 hover:bg-sky-700 w-full mb-4 sm:w-auto sm:mb-0"
-                  href="https://forms.gle/bwyLEBzTaHbb68GQ6"
+                  href={links.registerForm}
                   target="_blank"
                 >
                   Join us!

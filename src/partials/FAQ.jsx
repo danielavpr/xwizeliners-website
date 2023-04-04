@@ -1,5 +1,6 @@
 import React from "react";
 import Collapse from "./Collapse";
+import links from "../constants/links";
 
 const questions = [
   {
@@ -27,7 +28,7 @@ const questions = [
     question: "From where/whom comes the initiative? Why are you doing this?",
     answer:
       "Here's a video where Matthew Pasienski explains the purpose of this group.",
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7026248495896358914",
+    link: links.videoLinkedin,
   },
 ];
 

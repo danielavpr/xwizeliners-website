@@ -4,6 +4,7 @@ import brainstorm from "../images/brainstorm.svg";
 import job from "../images/job.svg";
 import group from "../images/group.svg";
 import ideas from "../images/share-ideas.svg";
+import links from "../constants/links";
 
 const features = [
   {
@@ -12,7 +13,7 @@ const features = [
     title: "Join the community",
     description: {
       text: "Register here",
-      link: "https://forms.gle/bwyLEBzTaHbb68GQ6",
+      link: links.registerForm,
     },
     bulletPoints: [
       "Connect with some of the best talents in the tech industry",
@@ -27,7 +28,7 @@ const features = [
     title: "Job seeking and sharing",
     description: {
       text: "Join our jobs and referrals channel in slack",
-      link: "https://xwizeline.slack.com/archives/C04RM21AY57"
+      link: links.slackJobChannel
     },
     bulletPoints: ["Apply for your next dream job or refer a friend that could be a good fit", "Earn money from your referrals"],
     imageLeft: true,
@@ -38,7 +39,7 @@ const features = [
     title: "Be an ambassador",
     description: {
       text: "Register here",
-      link: "https://forms.gle/UuhBzbqEQ96zmGJ47",
+      link: links.eventsForm,
     },
     bulletPoints: ["Organize virtual or in-person events in your city", "Share your ideas to enhance the operations of the group"],
   },
@@ -48,7 +49,7 @@ const features = [
     title: "Join the events",
     description: {
       text: "Events channel in slack",
-      link: "https://xwizeline.slack.com/archives/C04R35Q6C5D",
+      link: links.slackEventsChannel,
     },
     bulletPoints: ["Be aware of all the next events online or in your city", "All the events are organized by the community"],
     imageLeft: true,

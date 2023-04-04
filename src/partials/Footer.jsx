@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import slack from "../images/slack.svg";
-import linkedin from "../images/linkedin.svg";
 import xwizeliners from "../images/xwizeliners.png";
+import links from "../constants/links";
 
 function Footer() {
   return (
@@ -49,7 +48,7 @@ function Footer() {
                   </li>
                   <li className="mb-1">
                     <Link
-                      to="https://forms.gle/TXFyr3pQf5QaGjKK7"
+                      to={links.registerForm}
                       target="_blank"
                       className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out"
                     >
@@ -58,7 +57,7 @@ function Footer() {
                   </li>
                   <li className="mb-1">
                     <Link
-                      to="https://forms.gle/hnXi95xpM5uz78ni6"
+                      to={links.ambassadorForm}
                       target="_blank"
                       className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out"
                     >
@@ -67,7 +66,7 @@ function Footer() {
                   </li>
                   <li className="mb-1">
                     <Link
-                      to="https://forms.gle/UuhBzbqEQ96zmGJ47"
+                      to={links.eventsForm}
                       target="_blank"
                       className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out"
                     >
