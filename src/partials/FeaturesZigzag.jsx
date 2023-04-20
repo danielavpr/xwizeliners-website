@@ -39,7 +39,7 @@ const features = [
     title: "Be an ambassador",
     description: {
       text: "Register here",
-      link: links.eventsForm,
+      link: links.ambassadorForm,
     },
     bulletPoints: ["Organize virtual or in-person events in your city", "Share your ideas to enhance the operations of the group"],
   },
